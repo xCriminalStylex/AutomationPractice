@@ -24,7 +24,7 @@ namespace AutomationPractice.PageObject
         private By _womensCoats = By.CssSelector(".htmlcontent-item-3 .item-img");
         private By _sunGlasses = By.CssSelector(".htmlcontent-item-4 .item-img");
         private By _handBags = By.CssSelector(".htmlcontent-item-5 .item-img");
-<<<<<<< HEAD
+
         public SlyderSymple1 Symple1()
         {
             WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(3));
@@ -43,14 +43,7 @@ namespace AutomationPractice.PageObject
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(_slyderSimple3)).Click();
             return new SlyderSymple3(_driver);
         }
-=======
-        //public SlyderSymple1 Symple1()
-        //{
-        //WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(3));
-        //IWebElement element = wait.Until(Ex)
-        //return new SlyderSymple1(_driver);
-        //}
->>>>>>> e221ea086d626c20f25b18dfedef03b19a6c07de
+
         public Banner25Sale Banner25Sale()
         {
             _driver.FindElement(_sale25).Click();
